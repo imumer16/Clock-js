@@ -33,8 +33,11 @@ Clone the project
 
 
 ## Screenshots
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/84404257/195993360-b3f0fe4a-5367-4c22-8377-911a73558cef.png">
+  <img src="https://user-images.githubusercontent.com/84404257/196021466-f5e221c1-da68-412d-8fe3-bb1cd264475b.jpeg" width="300" height="600">
 
-![image](https://user-images.githubusercontent.com/84404257/195993360-b3f0fe4a-5367-4c22-8377-911a73558cef.png)
+</div>
 
 
 
