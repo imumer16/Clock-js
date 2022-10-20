@@ -6,21 +6,21 @@ function startTime() {
     let s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    if(s >= 30){
-        document.getElementById("side1").style.color="#ff0000cb";
-        document.getElementById("side1").style.transition = "all 2s";
-        document.getElementById("side2").style.color="#ff0000cb";
-        document.getElementById("side2").style.transition = "all 2s";
-        document.getElementById("side3").style.color="#ff0000cb";
-        document.getElementById("side3").style.transition = "all 2s";
-    }else{
-        document.getElementById("side1").style.color="#67dc67cb";
-        document.getElementById("side1").style.transition = "all 2s";
-        document.getElementById("side2").style.color="#67dc67cb";
-        document.getElementById("side2").style.transition = "all 2s";
-        document.getElementById("side3").style.color="#67dc67cb";
-        document.getElementById("side3").style.transition = "all 2s";
-    }
+  // if(s >= 30){
+  //     document.getElementById("side1").style.color="#ff0000cb";
+  //     document.getElementById("side1").style.transition = "all 2s";
+  //     document.getElementById("side2").style.color="#ff0000cb";
+  //     document.getElementById("side2").style.transition = "all 2s";
+  //     document.getElementById("side3").style.color="#ff0000cb";
+  //     document.getElementById("side3").style.transition = "all 2s";
+  // }else{
+  //     document.getElementById("side1").style.color="#67dc67cb";
+  //     document.getElementById("side1").style.transition = "all 2s";
+  //     document.getElementById("side2").style.color="#67dc67cb";
+  //     document.getElementById("side2").style.transition = "all 2s";
+  //     document.getElementById("side3").style.color="#67dc67cb";
+  //     document.getElementById("side3").style.transition = "all 2s";
+  // }
     document.getElementById('side1').innerHTML =  s;
     document.getElementById('side2').innerHTML =  h;
     document.getElementById('side3').innerHTML =  m;
