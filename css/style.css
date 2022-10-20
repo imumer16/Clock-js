@@ -3,42 +3,41 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: none;
 }
 
 body {
   width: 100%;
   height: 100vh;
-  background-color: #161616;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+
   display: flex;
-  justify-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 #wrapD3Cube {
   width: 400px;
   height: 400px;
-  margin: 40px auto;
-  position: absolute;
-  top: 32.5vh;
 }
 
 #D3Cube {
   width: 224px;
   height: 224px;
-  top: 50px;
   transform-style: preserve-3d;
   transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg);
   margin: auto;
   position: relative;
   transform-style: preserve-3d;
   transition: all 0.5s ease-in-out;
-  color: green;
-  justify-content: center;
-  display: flex;
-  justify-items: center;
-  font-family: "DotGothic16", sans-serif;
   font-size: 150px;
+  text-align: center;
+  font-family: "DotGothic16", sans-serif;
 }
 
 #D3Cube > div {
@@ -49,26 +48,104 @@ body {
   float: left;
   overflow: hidden;
   opacity: 0.85;
-  color: #67dc67cb;
-  justify-content: center;
-  display: flex;
-  justify-items: center;
 }
 
 #side1 {
-  transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(112px);
-  background-color: #0000003d;
-  border: 3px solid black;
+  transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(116.5px);
 }
 
 #side2 {
-  transform: translateX(0px) translateY(0px) translateZ(112px);
-  background-color: #0000003d;
-  border: 3px solid black;
+  transform: translateX(0px) translateY(0px) translateZ(116.5px);
 }
 
 #side3 {
-  transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(112px);
-  background-color: #0000003d;
-  border: 3px solid black;
+  transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(116.5px);
+}
+
+#side1,
+#side2,
+#side3 {
+  background-image: none;
+  border: 5px solid black;
+  background-color: #161616;
+  animation: Color 4s linear infinite;
+  -webkit-animation: Color 4s ease-in-out infinite;
+}
+
+@keyframes Color {
+  0% {
+    color: #a0d468;
+  }
+
+  20% {
+    color: #4fc1e9;
+  }
+
+  40% {
+    color: #ffce54;
+  }
+
+  60% {
+    color: #fc6e51;
+  }
+
+  80% {
+    color: #ed5565;
+  }
+
+  100% {
+    color: #ac92ec;
+  }
+}
+
+@-moz-keyframes Color {
+  0% {
+    color: #a0d468;
+  }
+
+  20% {
+    color: #4fc1e9;
+  }
+
+  40% {
+    color: #ffce54;
+  }
+
+  60% {
+    color: #fc6e51;
+  }
+
+  80% {
+    color: #ed5565;
+  }
+
+  100% {
+    color: #ac92ec;
+  }
+}
+
+@-webkit-keyframes Color {
+  0% {
+    color: #a0d468;
+  }
+
+  20% {
+    color: #4fc1e9;
+  }
+
+  40% {
+    color: #ffce54;
+  }
+
+  60% {
+    color: #fc6e51;
+  }
+
+  80% {
+    color: #ed5565;
+  }
+
+  100% {
+    color: #ac92ec;
+  }
 }
